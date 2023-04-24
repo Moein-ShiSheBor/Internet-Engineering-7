@@ -1,0 +1,46 @@
+<!-- This is a JavaScript code snippet that adds an event listener to a form's submit event.
+     When the form is submitted, the function checks the validity of the email, password, and phone input fields.
+     If any of the input fields are invalid, an error message is displayed. 
+     If all input fields are valid, the form is submitted and the submit button is disabled to prevent multiple submissions. -->
+
+<!-- This is an HTML code snippet that creates a form with three input fields for email, password, and phone.
+     Each input field is required, and has an associated error message span. When the form is submitted,
+     the form data is validated using JavaScript. The form also contains a submit button, which triggers the form submission. -->
+
+<!-- This is a CSS code for styling a form that is used for input validation.
+     The code sets various properties for the form and its components, including font family style.
+     It also sets properties for the error and success messages, including font size and color, and styling for the submit button.
+     The code also sets styling for invalid and valid inputs, such as border color.
+     Overall, this code creates a visually appealing and functional form that allows for input validation. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form Validation Example</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <span class="error" id="email-error"></span>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+        <span class="error" id="password-error"></span>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" required>
+        <span class="error" id="phone-error"></span>
+
+        <button type="submit" id="submit-btn">Submit</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
